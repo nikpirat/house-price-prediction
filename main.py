@@ -14,7 +14,7 @@ def main():
     print("\n🔮 Predicting prices from new data CSV...")
 
     # Load new data from CSV (unlabeled, no SalePrice column)
-    input_csv_path = "../data/raw/new_houses.csv"  # You must create this CSV
+    input_csv_path = "data/raw/new_houses.csv"  # You must create this CSV
     new_data = pd.read_csv(input_csv_path)
 
     predictions = predict_house_batch(new_data)
@@ -25,7 +25,7 @@ def main():
     print(new_data.head())
 
     # Optionally save to file
-    output_path = "../outputs/reports/predictions.csv"
+    output_path = "outputs/reports/predictions.csv"
     new_data.to_csv(output_path, index=False)
     print(f"\n✅ Predictions saved to {output_path}")
 
