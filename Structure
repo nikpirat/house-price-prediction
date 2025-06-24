@@ -1,0 +1,25 @@
+house_price_prediction/
+│
+├── data/
+│   ├── raw/                # Raw data files (e.g., CSV)
+│   └── processed/          # Cleaned/engineered datasets
+│
+│
+├── src/
+│   ├── __init__.py
+│   ├── data_loader.py      # Data loading
+│   ├── preprocess.py       # Data cleaning, transformation
+│   ├── features.py         # Optional, for feature engineering
+│   ├── model.py            # Model definitions
+│   ├── train.py            # Contains training logic (no entry point)
+│   ├── evaluate.py         # Evaluation logic (called by main)
+│   └── predict.py          # Inference logic (called by main)
+│
+├── outputs/
+│   ├── models/             # Serialized models (e.g., .pkl)
+│   └── reports/            # Evaluation reports, plots
+│
+├── config.py               # Paths, constants
+├── main.py                 # Entry point: calls train/eval/etc
+├── requirements.txt
+└── README.md
