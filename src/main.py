@@ -2,7 +2,7 @@ import pandas as pd
 from src.train_model import train_model
 from src.evaluate import evaluate_model
 from src.predict import predict_house_batch
-from src.config import MODEL_PATH
+
 
 def main():
     print("\n🔧 Training model...")

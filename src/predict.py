@@ -1,6 +1,6 @@
 import joblib
 import pandas as pd
-from src.config import MODEL_PATH
+from config import MODEL_PATH
 
 # 📈 Predict house prices for a batch of inputs (used with CSV)
 def predict_house_batch(df: pd.DataFrame) -> pd.DataFrame:

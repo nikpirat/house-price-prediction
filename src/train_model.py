@@ -3,7 +3,7 @@ from src.preprocess import build_preprocessor
 from src.model import build_model
 from sklearn.model_selection import train_test_split
 import joblib
-from src.config import MODEL_PATH
+from config import MODEL_PATH
 
 # train_model function is the engine that builds, trains, and saves linear regression model for predicting house prices
 def train_model():

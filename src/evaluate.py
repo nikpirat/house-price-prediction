@@ -1,6 +1,6 @@
 import joblib
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
-from src.config import MODEL_PATH
+from config import MODEL_PATH
 
 def evaluate_model(X_test, y_test, print_samples=True):
     model = joblib.load(MODEL_PATH)
